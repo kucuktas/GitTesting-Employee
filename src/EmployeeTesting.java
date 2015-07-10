@@ -21,7 +21,7 @@ public class EmployeeTesting {
 			System.out.printf( currentEmployee.toString() );
 
 			if ( currentEmployee instanceof BasePlusCommissionEmployee ) {
-				BasePlusCommissionEmployee employee = ( BasePlusCommissionEmployee ) currentEmployee;
+				BasePlusCommissionEmployee employee = ( BasePlusCommissionEmployee )currentEmployee;
 
 				employee.setBaseSalary( employee.getBaseSalary() * 1.1 );
 				System.out.printf( "new base salary with 10%% increase is: $%,.2f\n", employee.getBaseSalary() );
