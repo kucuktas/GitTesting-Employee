@@ -20,13 +20,13 @@ public class SalariedEmployee extends Employee {
 	}
 
 	@Override
-	public double earnings() {
+	public double getPaymentAmount() {
 		return getWeeklySalary();
 	}
 
 	@Override
 	public String toString() {
-		return String.format( "salaried employee: %s\n%s: $%.2f\n", super.toString(), "weekly salary",
+		return String.format( "salaried employee: %s\n%s: $%.2f", super.toString(), "weekly salary",
 				getWeeklySalary() );
 	}
 
