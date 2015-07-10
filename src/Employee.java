@@ -1,5 +1,5 @@
 
-public abstract class Employee {
+public abstract class Employee implements Payable {
 
 	private String firstName;
 	private String lastName;
@@ -41,7 +41,5 @@ public abstract class Employee {
 		return String.format( "%s %s\nsocial security number: %s", getFirstName(), getLastName(),
 				getSocialSecurityNumber() );
 	}
-
-	public abstract double earnings();
 
 }
